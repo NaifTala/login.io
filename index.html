@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url('LOGO COMSCIE FF.png'); /* Replace 'your-image-path.jpg' with your image file name */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255); /* Add text color for better visibility on the background */
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel (0.5 for 50% transparency) */
+            z-index: -91; /* Place the overlay behind the content */
+
+        #login-form {
+            max-width: 400px;
+            margin: auto;
+            background-color: rgba(28, 3, 3, 0.8); /* Add a semi-transparent background color for better contrast */
+            padding: 200px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            margin: 5px 0;
+         
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-form">
+        <h2>WELCOME BACK!</h2>
+        <h3>SANAOL BUMABALIK</h3>
+        <h4>LAGAY MO KAHIT ANONG USERNAME AT PASSWORD</h4>
+        <form action="main.html">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
